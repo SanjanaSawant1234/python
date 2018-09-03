@@ -1,0 +1,167 @@
+                                                           Assignment:1
+Q1.Will the following lines of code print the same thing? Explain why or why not
+x = 6,print(6),print("6")
+ans: yes...
+>>> x=6
+>>> x
+6
+>>> print(6)
+6
+>>> print("6")
+6
+
+Q2.Will the following lines of code print the same thing? Explain why or why not. x = 7 print(x) print("x")
+ans:No,because print(x) will print x on the screen not value whereas  athor two statement print the value i.e 7
+ x=7
+>>> x
+7
+>>> print(x)
+7
+>>> print("x")
+x
+
+Q3.What is wrong with the following statement that attempts to assign the value ten to  variable x? 10 = x
+ans: It will give the syntax error that can't assign to literal
+ 10=x
+output:SyntaxError: can't assign to literal
+
+Q4.In Python can you assign more than one variable in a single statement?
+ans:Yes,we can assign more than one variable for the single value using multiple assignment,this lets you initialize several variables at ones which you can reassign later in the program by urself or throgh user input
+eg. x=y=z=0
+output:
+0
+0
+0
+
+Q4.What is the difference between the following two strings? ’n’ and ’\n’?
+ans: 'n' only print n and \n will move the cursor to the new line
+eg.
+>>>print('n')
+n
+>>>print('Hi'\n'Hi')
+Hi
+Hi
+
+Q5.Write a Python program containing exactly one print statement that produces the  following output :­ 
+A
+B
+C
+D
+E
+F
+ans:
+>>> print("A\nB\nC\nD\nE\nF\n")
+A
+B
+C
+D
+E
+F
+
+Q6.Given the following Assignments :­  
+x = 2 Indicate what each of the following Python statements would print. (a) print("x") ,(b) print(’x’), (c) print(x) ,(d) print("x + 1"), (e) print(’x’ + 1) ,(f) print(x + 1)
+ans:
+>>> x=2
+>>> print("x")
+x
+>>> print('x')
+x
+>>> print(x)
+2
+>>> print("x+1")
+x+1
+>>> print('x'+1)
+TypeError: must be str, not int
+>>> print(x+1)
+3
+
+Q7. Consider the following program that attempts to compute the circumference of a  circle given the radius entered by the user. Given a circle’s radius, r, the circle’s  circumference, C is given by the formula:c = 2 r
+r = 0 PI = 3.14159
+# Formula for the area of a circle given its radius C = 2*PI*r
+# Get the radius from the user r = eval(input("Please enter the circle's radius: ")
+# Print the circumference print("Circumference is", C)
+(a) The program does not produce the intended result. Why? (b) How can it be repaired so that it works correctly?
+ans:a)we can't assign 0 to the variable r becuase it will initially make the answer to be zero,second thing we cant use the eval as a datatype 
+b)you either give r value by yourself or else you can go for the user input by taking integer as datatype
+PI=3.14
+c=2*PI*r
+r=int(input("Enter radius:"))
+print("circumference is:,c)
+output:
+Enter radius:5
+circumference is:31.4
+
+Q8. How many asterisks does the following code fragment print?
+a = 0
+ while a < 100: 
+print('*', end='')
+ a += 1
+ print()
+ans:It will print 100 astrics
+
+Q9.Write a line of code that prompts the user for his or her name and saves the user’s input in a variable called name .
+ans:
+>>> s=str(input("Enter the string:"))
+Enter the string:sanjana
+>>> name=s
+>>> name
+'sanjana'
+
+Q10.Write and test a program that accepts the user’s name (as text) and age (as anumber) as input. The program should output a sentence containing the user’s name and age.
+ans:
+>>> s=str(input("Enter the string:"))
+Enter the string:sanjana
+>>> t=int(input("Enter the age:"))
+Enter the age:19
+>>> print("name is:",str(s)+"  "+"age is:",str(t))
+name is: sanjana  age is: 19
+
+Q11.Let the variable x be “dog” and the variable y be “cat” . Write the values returned by the following operations: 
+a. x + y  ,  b. “the “ + x + “ chases the “ + y  , c.x * 4
+ans:
+>>> x="dog"
+>>> y="cat"
+>>> x+y
+'dogcat'
+>>> "the"+x+"chase the"+y
+'thedogchase thecat'
+>>> x*4
+'dogdogdogdog'
+
+Q12.which of the following are valid variable names?
+a. length b. _width c. firstBase d. 2MoreToGo e. halt!
+ans:      valid=length,_width,firstBase,halt!
+             Invalid=2MoreToGo
+>>> length=2
+>>> length
+2
+>>> _width=2
+>>> _width
+2
+>>> firstBase=3
+>>> firstBase
+3
+>>> 2MoreToGo=2
+SyntaxError: invalid syntax
+>>> halt!=2
+False
+
+Q13.Assume that the variable data refers to the list [5, 3, 7] . Write the values of the following expressions: 
+a) data[2],b) data[­1],c)en(data),d) data[0:2],e)0 in data,
+f)data+ [2, 10, 5], g) tuple(data)
+ans:
+>>> data=[5,3,7]
+>>> data[2]
+7
+>>> data[-1]
+7
+>>> len(data)
+3
+>>> data[0:2]
+[5, 3]
+>>> 0 in data
+False
+>>> data+[2,10,5]
+[5, 3, 7, 2, 10, 5]
+>>> tuple(data)
+(5, 3, 7)
